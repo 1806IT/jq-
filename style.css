@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0}
+div.window{
+    width: 300px;
+    overflow: hidden;
+}
+.imags{
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.6s;
+}
+img{
+    width: 300px;
+}
+
+.imags.position-1{
+    transform: translate(0);
+}
+.imags.position-2{
+    transform: translate(-300px);
+}
+.imags.position-3{
+    transform: translate(-600px);
+}
+.imags.position-4{
+    transform: translate(-900px);
+}
+.red{
+    color: red;
+}
