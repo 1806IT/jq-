@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0}
+*{box-sizing: border-box;}
+div.window{
+    width: 400px;
+    margin: 20px auto;
+    padding: 6px;
+
+}
+.imags{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+.imags>img{
+    width: 100%;
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+.imags>img.current{
+    left: 0;
+    transform: translateX(0);
+    z-index:1;
+}
+.imags>img.leave{
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+}
+.imags>img.enter{
+    left: 0;
+    transform: translateX(100%);
+}
